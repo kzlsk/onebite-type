@@ -1,0 +1,24 @@
+{
+  // 상세한 옵션
+  "compilerOptions": {
+    // 타입 검사 생략 옵션
+    "skipLibCheck": true,
+    // 컴파일 결과 생성되는 자바스크립트 코드 버전 설정
+    // ESNext : 최신 자바스크립트 버전
+    "target": "ESNext",
+    // 코드의 모듈 시스템 설정
+    "module": "ESNext",
+    // 컴파일 결과 생성할 자바스크립트 코드 위치 결정
+    "outDir": "dist",
+    // 엄격한 타입 검사
+    "strict": false,
+    // 타입스크립트의 모든 파일은 기본적으로 전역 파일로 취급
+    // 모듈 시스템 키워드 (export, import) 최소 하나 이상 사용하여 독립된 모듈로 만들어주기
+    // export {}
+    // 또는 moduleDetection 옵션을 force로 설정하려 독립된 모듈로 취급
+    "moduleDetection": "force"
+  },
+  // 컴파일 할 타입스크립트 파일의 범위와 위치를 알려줌
+  // src 폴더 아래의 모든 타입스크립트 파일이 동시에 컴파일 됨
+  "include": ["src"]
+}
